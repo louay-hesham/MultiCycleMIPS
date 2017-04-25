@@ -12,7 +12,6 @@ module maindec(	input logic clk,
 		case(state)
 			4'b0000: //fetch
 			begin
-				state = 4'b0001;
 				assign IorD = 0;
 				assign alusrcA = 0;
 				assign alusrcB = 2'b01;
@@ -20,7 +19,9 @@ module maindec(	input logic clk,
 				assign pcsrc = 2'b00;
 				assign IRwrite = 1;
 				assign pcwrite = 1;
+				state = 4'b0001;
 			end
+
 			4'b0001: //decode
 			begin
 				assign alusrcA = 0;
@@ -35,7 +36,17 @@ module maindec(	input logic clk,
 					6'b000010: state = 4'b1011; // J
 					default:   state = 4'bxxxx; // illegal op
 				endcase
-			end;
+			end
 			
+			4'b0010: //MemAdr (SW and LW)
+			begin
+				assign alusrcA = 1;
+				assign alusrcB = 2'b10;
+				assign aluop = 2'b00;
+				case (op)
+					6'b100011: state = 4'b0011; // LW
+					6'b101011: state = 4'b0101; // SW
+				endcase
+			end
 		endcase
 endmodule
