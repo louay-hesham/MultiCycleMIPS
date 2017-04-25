@@ -109,5 +109,12 @@ module maindec(	input logic clk,
 				assign regwrite = 1;
 				state = 4'b0000;
 			end
+		
+			4'b1011: //Jump
+			begin
+				assign pcsrc = 2'b10;
+				assign pcwrite = 1;
+				state = 4'b0000;
+			end
 		endcase
 endmodule
