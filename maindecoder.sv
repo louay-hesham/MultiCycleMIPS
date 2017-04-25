@@ -69,6 +69,12 @@ module maindec(	input logic clk,
 				state = 4'b0000;
 			end
 
+			4'b0110:
+			begin
+				assign alusrcA = 1;
+				assign alusrcB = 2'b00;
+				assign aluop = 2'b10;
+				state = 4'b0111;
 			end
 		endcase
 endmodule
