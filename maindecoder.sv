@@ -84,5 +84,14 @@ module maindec(	input logic clk,
 				assign regwrite = 1;
 				state = 4'b0000;
 			end 
+
+			4'b1000: //Branch (BEQ)
+			begin
+				assign alusrcA = 1;
+				assign alusrcB = 2'b00;
+				assign aluop = 2'b01;
+				assign pcsrc = 2'b01;
+				state = 4'b0000;
+			end
 		endcase
 endmodule
