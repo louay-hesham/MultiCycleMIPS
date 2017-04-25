@@ -50,5 +50,11 @@ module maindec(	input logic clk,
 			end
 
 			4'b0011: assign IorD = 1; //MemRead (LW)
+			4'b0100: //WriteBack (LW)
+			begin
+				assign regdst = 0;
+				assign memtoreg = 1;
+				assign regwrite = 1;
+			end
 		endcase
 endmodule
