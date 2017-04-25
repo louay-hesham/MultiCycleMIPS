@@ -48,5 +48,7 @@ module maindec(	input logic clk,
 					6'b101011: state = 4'b0101; // SW
 				endcase
 			end
+
+			4'b0011: assign IorD = 1; //MemRead (LW)
 		endcase
 endmodule
