@@ -93,5 +93,13 @@ module maindec(	input logic clk,
 				assign pcsrc = 2'b01;
 				state = 4'b0000;
 			end
+
+			4'b1001: //Execute (ADDI)
+			begin
+				assign alusrcA = 1;
+				assign alusrcB = 2'b10;
+				assign aluop = 2'b00;
+				state = 4'b1010;
+			end
 		endcase
 endmodule
