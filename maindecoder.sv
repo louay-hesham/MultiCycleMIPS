@@ -69,7 +69,7 @@ module maindec(	input logic clk,
 				state = 4'b0000;
 			end
 
-			4'b0110:
+			4'b0110: //Execute (R-type)
 			begin
 				assign alusrcA = 1;
 				assign alusrcB = 2'b00;
