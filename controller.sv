@@ -1,4 +1,4 @@
-module controller(	input logic clk,
+module controller(	input logic clk, reset
 			input logic [5:0] op, funct,
 			input logic zero,
 			output logic IorD, IRwrite, memwrite, memtoreg,
@@ -10,7 +10,7 @@ module controller(	input logic clk,
 	logic [1:0] aluop;
 	logic branch, pcwrite;
 
-	maindec md(	clk, op,
+	maindec md(	clk, reset, op,
 			IorD, IRwrite, memwrite, memtoreg,
 			branch, pcwrite, regwrite, regdst,
 			alusrcA, alusrcB, aluop, pcsrc);

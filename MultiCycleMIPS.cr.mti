@@ -5,13 +5,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	sl2
 
-} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/mips.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/mips.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module mips
-
-Top level modules:
-	mips
-
 } {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/multiplexer.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/multiplexer.sv}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module mux2
@@ -60,13 +53,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	top
-
-} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/controller.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/controller.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module controller
-
-Top level modules:
-	controller
 
 } {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/regfile.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/regfile.sv}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
