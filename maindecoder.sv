@@ -76,5 +76,13 @@ module maindec(	input logic clk,
 				assign aluop = 2'b10;
 				state = 4'b0111;
 			end
+
+			4'b0111: //Write back (R-type)
+			begin
+				assign regdst = 1;
+				assign memtoreg = 0;
+				assign regwrite = 1;
+				state = 4'b0000;
+			end 
 		endcase
 endmodule
