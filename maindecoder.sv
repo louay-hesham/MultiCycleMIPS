@@ -49,12 +49,26 @@ module maindec(	input logic clk,
 				endcase
 			end
 
-			4'b0011: assign IorD = 1; //MemRead (LW)
+			4'b0011: 
+			begin //MemRead (LW)
+				assign IorD = 1; 
+				state = 4'b0100;
+			end
 			4'b0100: //WriteBack (LW)
 			begin
 				assign regdst = 0;
 				assign memtoreg = 1;
 				assign regwrite = 1;
+				state = 4'b0000;
+			end
+
+			4'b0101: //MemWrite (SW)
+			begin
+				assign IorD = 1;
+				assign memwrite = 1;
+				state = 4'b0000;
+			end
+
 			end
 		endcase
 endmodule
