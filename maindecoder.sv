@@ -101,5 +101,13 @@ module maindec(	input logic clk,
 				assign aluop = 2'b00;
 				state = 4'b1010;
 			end
+
+			4'b1010: //Writeback (ADDI)
+			begin
+				assign regdst = 0;
+				assign memtoreg = 0;
+				assign regwrite = 1;
+				state = 4'b0000;
+			end
 		endcase
 endmodule
