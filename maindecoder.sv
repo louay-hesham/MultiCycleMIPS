@@ -21,7 +21,7 @@ module maindec(	input logic clk, reset,
 					assign pcsrc = 2'b00;
 					assign IRwrite = 1;
 					assign pcwrite = 1;
-					state = 4'b0001;
+					assign state = 4'b0001;
 				end
 	
 				4'b0001: //decode
@@ -30,13 +30,13 @@ module maindec(	input logic clk, reset,
 					assign alusrcB = 2'b11;
 					assign aluop = 2'b00;
 					case (op)
-						6'b000000: state = 4'b0110; // RTYPE
-						6'b100011: state = 4'b0010; // LW
-						6'b101011: state = 4'b0010; // SW
-						6'b000100: state = 4'b1000; // BEQ
-						6'b001000: state = 4'b1001; // ADDI
-						6'b000010: state = 4'b1011; // J
-						default:   state = 4'bxxxx; // illegal op
+						6'b000000: assign state = 4'b0110; // RTYPE
+						6'b100011: assign state = 4'b0010; // LW
+						6'b101011: assign state = 4'b0010; // SW
+						6'b000100: assign state = 4'b1000; // BEQ
+						6'b001000: assign state = 4'b1001; // ADDI
+						6'b000010: assign state = 4'b1011; // J
+						default:   assign state = 4'bzzzz; // illegal op
 					endcase
 				end
 				
