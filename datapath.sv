@@ -5,7 +5,7 @@ module datapath (	input logic clk, reset,
 			input logic alusrcA,
 			input logic [1:0] alusrcB, pcsrc,
 			input logic [2:0] alucontrol,
-			output logic zero.
+			output logic zero,
 			output logic [31:0] pc, aluout, writedata, dataadr);
 
 	logic [31:0] pcnext, aluresult, pcjump, instr, data;

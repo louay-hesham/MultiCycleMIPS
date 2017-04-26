@@ -1,4 +1,4 @@
-module maindec(	input logic clk,
+module maindec(	input logic clk, reset,
 		input logic [5:0] op,
 		output logic IorD, IRwrite, memwrite, memtoreg,
 		output logic branch, pcwrite, regwrite, regdst,
@@ -8,9 +8,9 @@ module maindec(	input logic clk,
 	logic [3:0] state;
 	initial	state = 4'b0000;
 
-	if (~reset)
-	begin
-		always @(posedge clk)
+	always @(posedge clk)
+		if (~reset)
+		begin
 			case(state)
 				4'b0000: //fetch
 				begin
@@ -119,5 +119,5 @@ module maindec(	input logic clk,
 					state = 4'b0000;
 				end
 			endcase
-	end
+		end
 endmodule
