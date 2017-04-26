@@ -40,13 +40,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	alu
 
-} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/dmem.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/dmem.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module dmem
-
-Top level modules:
-	dmem
-
 } {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/top.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/top.sv}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module top
@@ -67,13 +60,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	mux4
-
-} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/imem.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/imem.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module imem
-
-Top level modules:
-	imem
 
 } {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/testbench.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/testbench.sv}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
