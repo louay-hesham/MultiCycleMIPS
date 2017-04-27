@@ -63,6 +63,8 @@ module maindec(	input logic clk, reset,
 				assign alusrcA = 0;
 				assign alusrcB = 2'b11;
 				assign aluop = 2'b00;
+				assign IRwrite = 0;
+				assign pcwrite = 0;
 			end
 			
 			4'b0010: //MemAdr (SW and LW)
