@@ -1,11 +1,4 @@
-{I:/College/Computer Architecture/MultiCycleMIPS/mips.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/mips.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module mips
-
-Top level modules:
-	mips
-
-} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/leftshift.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/leftshift.sv}
+{I:/College/Computer Architecture/MultiCycleMIPS/leftshift.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/leftshift.sv}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module sl2
 
@@ -25,13 +18,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	flopr
-
-} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/datapath.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/datapath.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module datapath
-
-Top level modules:
-	datapath
 
 } {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/signextention.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/signextention.sv}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -53,6 +39,13 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	alu
+
+} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/maindecoder.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/maindecoder.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module maindec
+
+Top level modules:
+	maindec
 
 } {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/top.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/top.sv}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
