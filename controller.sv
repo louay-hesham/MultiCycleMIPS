@@ -1,4 +1,4 @@
-module controller(	input logic clk, reset
+module controller(	input logic clk, reset,
 			input logic [5:0] op, funct,
 			input logic zero,
 			output logic IorD, IRwrite, memwrite, memtoreg,
