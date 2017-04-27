@@ -12,13 +12,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	sl2
 
-} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/multiplexer.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/multiplexer.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module mux2
-
-Top level modules:
-	mux2
-
 } {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/flipflop.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/flipflop.sv}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module flopr
@@ -47,6 +40,13 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	aludec
 
+} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/alu.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/alu.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu
+
+Top level modules:
+	alu
+
 } {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/maindecoder.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/maindecoder.sv}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module maindec
@@ -60,13 +60,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	mem
-
-} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/top.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/top.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module top
-
-Top level modules:
-	top
 
 } {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/controller.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/controller.sv}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015

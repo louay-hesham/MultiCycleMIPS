@@ -6,12 +6,15 @@ module datapath (	input logic clk, reset,
 			input logic [1:0] alusrcB, pcsrc,
 			input logic [2:0] alucontrol,
 			output logic zero,
-			output logic [31:0] pc, aluout, writedata, dataadr, instr);
+			output logic [31:0] pc, aluout, writedata, dataadr, instrout);
 
-	logic [31:0] pcnext, aluresult, pcjump, data;
+	logic [31:0] pcnext, aluresult, pcjump, data, instr;
 	logic [31:0] rd1, rd2, regA, regB;
 	logic [31:0] srcA, srcB;
 	logic [31:0] signimm, signimmsh;
+	logic [31:0] writereg, result;
+
+	assign instrout = instr;
 
 	//next pc logic
 	assign pcjump = {pc[31:28], readdata[25:0], 2'b00};
