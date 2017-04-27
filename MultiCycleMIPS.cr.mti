@@ -40,34 +40,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	alu
 
-} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/maindecoder.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/maindecoder.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module maindec
-
-Top level modules:
-	maindec
-
-} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/top.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/top.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module top
-
-Top level modules:
-	top
-
-} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/dmem.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/dmem.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module mem
-
-Top level modules:
-	mem
-
-} {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/controller.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/controller.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module controller
-
-Top level modules:
-	controller
-
 } {} {}} {I:/College/Computer Architecture/MultiCycleMIPS/regfile.sv} {1 {vlog -work work -sv -stats=none {I:/College/Computer Architecture/MultiCycleMIPS/regfile.sv}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module regfile
