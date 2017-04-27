@@ -24,7 +24,7 @@ module mips(	input logic clk, reset,
 			alusrcB, pcsrc,
 			alucontrol,
 			zero,
-			pc, aluout, writedata, dataadr, instr);
+			pc, writedata, dataadr, instr);
 
 endmodule
 
