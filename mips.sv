@@ -1,7 +1,7 @@
 module mips(	input logic clk, reset,
 		output logic [31:0] pc, 
 		output logic memwrite, 
-		output logic [31:0] aluout, writedata, dataadr, 
+		output logic [31:0] writedata, dataadr, 
 		input logic [31:0] readdata);
 
 	logic IorD, IRwrite, memtoreg, pcEn, regwrite, regdst;
@@ -24,7 +24,7 @@ module mips(	input logic clk, reset,
 			alusrcB, pcsrc,
 			alucontrol,
 			zero,
-			pc, aluout, writedata, dataadr, instr);
+			pc, writedata, dataadr, instr);
 
 endmodule
 

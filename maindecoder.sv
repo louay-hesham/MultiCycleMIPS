@@ -5,6 +5,7 @@ module maindec(	input logic clk, reset,
 		output logic alusrcA,
 		output logic [1:0] alusrcB, aluop, pcsrc);
 
+	logic [14:0] controlWord;
 	logic [3:0] state;
 	initial	state = 4'b0000;
 
@@ -45,7 +46,9 @@ module maindec(	input logic clk, reset,
 				4'b1011: assign state = 4'b0000;
 			endcase 
 		end
+
 	always_comb
+	begin
 		case(state)
 			4'b0000: //fetch
 			begin
@@ -63,6 +66,8 @@ module maindec(	input logic clk, reset,
 				assign alusrcA = 0;
 				assign alusrcB = 2'b11;
 				assign aluop = 2'b00;
+				assign IRwrite = 0;
+				assign pcwrite = 0;
 			end
 			
 			4'b0010: //MemAdr (SW and LW)
@@ -131,4 +136,6 @@ module maindec(	input logic clk, reset,
 				assign pcwrite = 1;
 			end
 		endcase
+		assign controlWord = {pcwrite, memwrite, IRwrite, regwrite, alusrcA, branch, IorD, memtoreg, regdst, alusrcB, pcsrc, aluop};
+	end
 endmodule
