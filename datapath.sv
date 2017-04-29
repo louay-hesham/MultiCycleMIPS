@@ -17,7 +17,7 @@ module datapath (	input logic clk, reset,
 	assign instrout = instr;
 
 	//next pc logic
-	assign pcjump = {pc[31:28], readdata[25:0], 2'b00};
+	assign pcjump = {pc[31:28], instr[25:0], 2'b00};
 	flopr #(32)	pcreg(clk, reset, pcEn, pcnext, pc);
 	mux4 #(32)	pcmux(aluresult, aluout, pcjump, 32'bz, pcsrc, pcnext);
 
@@ -35,6 +35,7 @@ module datapath (	input logic clk, reset,
 
 	flopr #(32)	regAff(clk, reset, 1'b1, rd1, regA);
 	flopr #(32)	regBff(clk, reset, 1'b1, rd2, regB);
+	assign writedata = regB;
 
 	//alu source A logic
 	mux2 #(32) 	alusrcAmux(pc, regA, alusrcA, srcA);
