@@ -59,6 +59,8 @@ module maindec(	input logic clk, reset,
 				assign pcsrc = 2'b00;
 				assign IRwrite = 1;
 				assign pcwrite = 1;
+				assign regwrite = 0;
+				assign branch = 0;
 			end
 
 			4'b0001: //decode
@@ -114,6 +116,7 @@ module maindec(	input logic clk, reset,
 				assign alusrcB = 2'b00;
 				assign aluop = 2'b01;
 				assign pcsrc = 2'b01;
+				assign branch = 1;
 			end
 
 			4'b1001: //Execute (ADDI)
