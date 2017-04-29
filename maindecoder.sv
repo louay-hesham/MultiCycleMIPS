@@ -62,6 +62,8 @@ module maindec(	input logic clk, reset,
 				assign regwrite = 0;
 				assign branch = 0;
 				assign memwrite = 0;
+				assign regdst = 0;
+				assign memtoreg = 0;
 			end
 
 			4'b0001: //decode
